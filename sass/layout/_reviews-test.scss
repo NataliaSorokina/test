@@ -11,9 +11,70 @@
   }
 
   &__item {
-    height: 564px;
-    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    /*width: 280px;
+    height: 564px; */
+    padding: 20px 35px;
+    margin-bottom: 20px;
+    text-align: center;
     background: $second-title;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    /* transition: $transition; */
+  }
+
+  &__main-photo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+
+  &__social-link {
+    /* margin: 20px 0; */
+    width: 30px;
+    height: 30px;
+  }
+
+  &__box-title {
+    margin: 20px 0;
+    @include font(14px, 17px);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: $accent-color;
+    /*  text-align: center; */
+  }
+
+  &__box-subtitle {
+    margin-bottom: 14px;
+    @include font(12px, 15px);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: $text;
+  }
+
+  &__review {
+    @include font(12px, 20px);
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: $second-text;
+    /* text-align: center; */
+  }
+
+  &__to-be-continued {
+    @include font(12px, 20px);
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: $accent-color;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__photo {
   }
 }
