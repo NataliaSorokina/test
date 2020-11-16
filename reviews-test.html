@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Веб-студия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" />
+   <!--  <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" /> -->
+    <link rel="stylesheet" href="./css/reviews-test.min.css" />
+</head>
+
+<body>   
+    <main>
+        <!--Reviews-->
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews__title">
+                    Отзывы выпускников
+                </h2>
+                <a class="reviews__item link" href="">
+                    <picture>                        
+                        <source srcset="./images/reviews/photo-main.webp 1x, ./images/reviews/photo-main@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp">
+                        <source srcset="./images/reviews/photo-main.jpg 1x, ./images/reviews/photo-main@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                        <source srcset="./images/reviews/mobile-phoro-main.webp 1x, ./images/reviews/mobile-phoro-main@2x.webp 2x"
+                            media="(min-width: 320px)" type="image/webp">
+                        <source srcset="./images/reviews/mobile-phoro-main.jpg 1x, ./images/reviews/mobile-phoro-main@2x.jpg 2x"
+                            media="(min-width: 320px)">
+                        <img src="./images/reviews/photo-main.jpg" alt="студентка Тоня Кучеровская" />
+                    </picture>
+                    <svg>
+                        <use href="./images/svg/sprite.svg#vk"></use>
+                    </svg>
+                    <h3 class="reviews__box-title">Тоня Кучеровская</h3>
+                    <p class="reviews__box-subtitke">Выпуск 2015-го года, <span lang="uk">Національний університет біоресурсів
+                    і природокористування України</span></p>
+                    <p class="reviews__review" lang="uk"> За короткий час занять з Оленою я опанувала граматику і поповнила свій зовсім пустий словниковий запас. З першого ж
+                    заняття я зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її справді хвилювала моя
+                    успішність. Вона стала для мене авторитетом, проте я не тремтіла на уроках, маючи страх зробити найменшу помилку. Зараз
+                    я можу похизуватись тим, що я студен ...</p>
+                    <span>Читать дальше</span>
+                </a>
+                
+                <div class="reviews__gallery">
+                    <a class="reviews__photo link" href="">
+                        <picture>
+                            <source srcset="./images/reviews/photo1.webp 1x, ./images/reviews/photo1@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo1.jpg 1x, ./images/reviews/photo1@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/reviews/photo1.webp 1x, ./images/reviews/photo1@2x.webp 2x" media="(min-width: 320px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo1.jpg 1x, ./images/reviews/photo1@2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./images/reviews/photo1.jpg" alt="студентка 1">
+                        </picture>
+                    </a>
+                    <a class="reviews__photo link" href="">
+                        <picture>
+                            <source srcset="./images/reviews/photo2.webp 1x, ./images/reviews/photo2@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo2.jpg 1x, ./images/reviews/photo2@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/reviews/photo2.webp 1x, ./images/reviews/photo2@2x.webp 2x"
+                                media="(min-width: 320px)" type="image/webp">
+                            <source srcset="./images/reviews/photo2.jpg 1x, ./images/reviews/photo2@2x.jpg 2x"
+                                media="(min-width: 320px)">
+                            <img src="./images/reviews/photo2.jpg" alt="студентка 2">
+                        </picture>
+                    </a>
+                    <a class="reviews__photo link" href="">
+                        <picture>
+                            <source srcset="./images/reviews/photo3.webp 1x, ./images/reviews/photo3@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo3.jpg 1x, ./images/reviews/photo3@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/reviews/photo3.webp 1x, ./images/reviews/photo3@2x.webp 2x" media="(min-width: 320px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo3.jpg 1x, ./images/reviews/photo3@2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./images/reviews/photo3.jpg" alt="студентка 3">
+                        </picture>
+                    </a>
+                    <a class="reviews__photo link" href="">
+                        <picture>
+                            <source srcset="./images/reviews/photo4.webp 1x, ./images/reviews/photo4@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo4.jpg 1x, ./images/reviews/photo4@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/reviews/photo4.webp 1x, ./images/reviews/photo4@2x.webp 2x" media="(min-width: 320px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo4.jpg 1x, ./images/reviews/photo4@2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./images/reviews/photo4.jpg" alt="студентка 4">
+                        </picture>
+                    </a>
+                    <a class="reviews__photo link" href="">
+                        <picture>
+                            <source srcset="./images/reviews/photo5.webp 1x, ./images/reviews/photo5@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo5.jpg 1x, ./images/reviews/photo5@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/reviews/photo5.webp 1x, ./images/reviews/photo5@2x.webp 2x" media="(min-width: 320px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo5.jpg 1x, ./images/reviews/photo5@2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./images/reviews/photo5.jpg" alt="студентка 5">
+                        </picture>
+                    </a>
+                    <a class="reviews__photo link" href="">
+                        <picture>
+                            <source srcset="./images/reviews/photo6.webp 1x, ./images/reviews/photo6@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo6.jpg 1x, ./images/reviews/photo6@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/reviews/photo6.webp 1x, ./images/reviews/photo6@2x.webp 2x" media="(min-width: 320px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo6.jpg 1x, ./images/reviews/photo6@2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./images/reviews/photo6.jpg" alt="студентка Тоня Кучеровская">
+                        </picture>
+                    </a>
+                    <a class="reviews__photo link" href="">
+                        <picture>
+                            <source srcset="./images/reviews/photo7.webp 1x, ./images/reviews/photo7@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo7.jpg 1x, ./images/reviews/photo7@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/reviews/photo7.webp 1x, ./images/reviews/photo7@2x.webp 2x" media="(min-width: 320px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/photo7.jpg 1x, ./images/reviews/photo7@2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./images/reviews/photo7.jpg" alt="студентка 5">
+                        </picture>
+                    </a>          
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Подвал-->
+
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="wrapper-modal">
+            <div class="modal-window">
+                <button type="button" class="close-btn" data-modal-close>
+                    <svg class="close-btn-svg close">
+                        <use href="./images/svg/sprite.svg#close-modal-btn"></use>
+                    </svg></button>
+                <form class="modal-form" action="#" method="get">
+                    <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <ul class="list">
+                        <li class="modal-form-field">
+                            <label class="modal-form-label" for="user-name">Имя</label>
+                            <input class="modal-form-input" type="text" name="user-name" id="user-name" placeholder=" "
+                                required minlength="2">
+                            <svg class="modal-form-icon">
+                                <use href="./images/svg/sprite.svg#person-black"></use>
+                            </svg>
+                        </li>
+
+                        <li class="modal-form-field">
+                            <label class="modal-form-label" for="user-phone">Телефон</label>
+                            <input class="modal-form-input" type="tel" name="user-phone" id="user-phone" placeholder=" "
+                                required>
+                            <svg class="modal-form-icon">
+                                <use href="./images/svg/sprite.svg#phone-black"></use>
+                            </svg>
+                        </li>
+
+                        <li class="modal-form-field">
+                            <label class="modal-form-label" for="user-email">Почта</label>
+                            <input class="modal-form-input" type="email" name="user-email" id="user-email"
+                                placeholder=" " required>
+                            <svg class="modal-form-icon">
+                                <use href="./images/svg/sprite.svg#email-black"></use>
+                            </svg>
+                        </li>
+                    </ul>
+
+                    <div class="modal-comment">
+                        <label class="modal-comment-label" for="comment">Комментарий</label>
+                        <textarea class="modal-comment-area" name="comment" id="comment"
+                            placeholder="Введите текст"></textarea>
+                    </div>
+
+                    <input class="modal-form-policy visually-hidden" type="checkbox" name="user-policy"
+                        value="accept-policy" id="user-policy">
+                    <label class="modal-policy-label" for="user-policy">Соглашаюсь с рассылкой и принимаю <a
+                            class="modal-policy-link" href="">Условия договора</a></label>
+
+                    <button type="submit" class="modal-btn">Отправить</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

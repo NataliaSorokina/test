@@ -1,0 +1,86 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* ========== Common ========== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== End Common ========== */
+/* ========== Container ========== */
+.container {
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 319px) {
+  .container {
+    width: 319px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 727px) {
+  .container {
+    width: 727px;
+  }
+}
+
+@media screen and (min-width: 1355px) {
+  .container {
+    width: 1355px;
+  }
+}
+
+/* ========== End Container ========== */
+.reviews {
+  padding: 50px 0;
+}
+
+.reviews__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #111518;
+}
+
+.reviews__item {
+  height: 564px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+/*# sourceMappingURL=reviews-test.css.map */
