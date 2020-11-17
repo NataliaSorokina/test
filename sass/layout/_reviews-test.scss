@@ -73,8 +73,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    /* &::before {
+      content: "";
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+      background-image: url(../images/svg/arrow-left.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: $accent-color;
+    } */
   }
 
   &__photo {
+    width: 54px;
+
+    &:nth-child(n + 4) {
+      display: none;
+    }
   }
 }
