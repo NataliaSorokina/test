@@ -65,6 +65,24 @@ body {
 /* ========== End Container ========== */
 .reviews {
   padding: 50px 0;
+  /* &__button {
+    width: 27px;
+    height: 20px;
+  }
+
+  &__arrow {
+    width: 25px;
+    height: 15px;
+    right: 0;
+
+    &:first-child {
+      margin-right: 24px;
+    }
+
+    &:last-child {
+      margin-left: 24px;
+    }
+  } */
 }
 
 .reviews__title {
@@ -92,9 +110,24 @@ body {
   /* transition: $transition; */
 }
 
+.reviews__item:nth-child(-n + 5) {
+  display: none;
+}
+
+.reviews__item:last-child {
+  display: none;
+}
+
+.reviews__left-side {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+}
+
 .reviews__main-photo {
-  width: 90px;
-  height: 90px;
+  /* width: 90px;
+    height: 90px; */
   margin-bottom: 20px;
 }
 
@@ -105,7 +138,8 @@ body {
 }
 
 .reviews__box-title {
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.21429;
   font-weight: 800;
@@ -123,7 +157,7 @@ body {
   color: #b9b9b9;
 }
 
-.reviews__review {
+.reviews__desc {
   font-size: 12px;
   line-height: 1.66667;
   font-weight: 500;
@@ -138,6 +172,7 @@ body {
   font-weight: 500;
   letter-spacing: 0em;
   color: #ff6b09;
+  text-decoration: underline;
 }
 
 .reviews__gallery {
@@ -146,11 +181,68 @@ body {
   justify-content: center;
 }
 
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
 .reviews__photo {
   width: 54px;
 }
 
 .reviews__photo:nth-child(n + 4) {
   display: none;
+}
+
+.reviews__photo:not(last-child) {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 727px) {
+  .reviews__title {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.30769;
+  }
+  .reviews__item {
+    flex-direction: row;
+    align-items: flex-start;
+    /* width: 688px;
+    height: 313px; */
+    padding: 40px;
+    margin-bottom: 30px;
+    text-align: left;
+    /* transition: $transition; */
+  }
+  .reviews__item:nth-child(-n + 5) {
+    display: none;
+  }
+  .reviews__item:last-child {
+    display: none;
+  }
+  .reviews__right-side {
+    display: block;
+    /* align-items: flex-start; */
+    margin-left: 46px;
+  }
+  .reviews__box-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .reviews__box-subtitle {
+    margin-bottom: 20px;
+  }
+  .reviews__photo {
+    width: 54px;
+  }
+  .reviews__photo:nth-child(n + 4) {
+    display: block;
+  }
+  .reviews__photo:not(last-child) {
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=reviews-test.css.map */

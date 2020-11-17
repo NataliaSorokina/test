@@ -23,11 +23,26 @@
     background: $second-title;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     /* transition: $transition; */
+
+    &:nth-child(-n + 5) {
+      display: none;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  &__left-side {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__main-photo {
-    width: 90px;
-    height: 90px;
+    /* width: 90px;
+    height: 90px; */
     margin-bottom: 20px;
   }
 
@@ -38,7 +53,8 @@
   }
 
   &__box-title {
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     @include font(14px, 17px);
     font-weight: 800;
     letter-spacing: 0.08em;
@@ -54,7 +70,7 @@
     color: $text;
   }
 
-  &__review {
+  &__desc {
     @include font(12px, 20px);
     font-weight: 500;
     letter-spacing: 0em;
@@ -67,7 +83,27 @@
     font-weight: 500;
     letter-spacing: 0em;
     color: $accent-color;
+    text-decoration: underline;
   }
+
+  /* &__button {
+    width: 27px;
+    height: 20px;
+  }
+
+  &__arrow {
+    width: 25px;
+    height: 15px;
+    right: 0;
+
+    &:first-child {
+      margin-right: 24px;
+    }
+
+    &:last-child {
+      margin-left: 24px;
+    }
+  } */
 
   &__gallery {
     display: flex;
@@ -75,11 +111,73 @@
     justify-content: center;
   }
 
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+  }
+
   &__photo {
     width: 54px;
 
     &:nth-child(n + 4) {
       display: none;
+    }
+
+    &:not(last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 727px) {
+  .reviews__title {
+    margin-bottom: 30px;
+    @include font(26px, 34px);
+  }
+
+  .reviews__item {
+    flex-direction: row;
+    align-items: flex-start;
+    /* width: 688px;
+    height: 313px; */
+    padding: 40px;
+    margin-bottom: 30px;
+    text-align: left;
+    /* transition: $transition; */
+
+    &:nth-child(-n + 5) {
+      display: none;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+  .reviews__right-side {
+    display: block;
+    /* align-items: flex-start; */
+    margin-left: 46px;
+  }
+  .reviews__box-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    @include font(20px, 24px);
+  }
+
+  .reviews__box-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .reviews__photo {
+    width: 54px;
+
+    &:nth-child(n + 4) {
+      display: block;
+    }
+
+    &:not(last-child) {
+      margin-right: 10px;
     }
   }
 }
