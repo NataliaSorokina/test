@@ -187,16 +187,18 @@ body {
   /* justify-content: center; */
 }
 
-.reviews__photo {
-  width: 54px;
-}
-
 .reviews__photo:nth-child(n + 4) {
   display: none;
 }
 
 .reviews__photo:not(last-child) {
   margin-right: 10px;
+}
+
+.reviews__link {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 727px) {
@@ -235,14 +237,8 @@ body {
   .reviews__box-subtitle {
     margin-bottom: 20px;
   }
-  .reviews__photo {
-    width: 54px;
-  }
   .reviews__photo:nth-child(n + 4) {
     display: block;
-  }
-  .reviews__photo:not(last-child) {
-    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=reviews-test.css.map */

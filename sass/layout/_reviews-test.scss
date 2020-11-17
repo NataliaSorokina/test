@@ -117,16 +117,18 @@
     /* justify-content: center; */
   }
 
-  &__photo {
+  &__photo:nth-child(n + 4) {
+    display: none;
+  }
+
+  &__photo:not(last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
     width: 54px;
-
-    &:nth-child(n + 4) {
-      display: none;
-    }
-
-    &:not(last-child) {
-      margin-right: 10px;
-    }
+    height: 54px;
+    border-radius: 50%;
   }
 }
 
@@ -169,15 +171,7 @@
     margin-bottom: 20px;
   }
 
-  .reviews__photo {
-    width: 54px;
-
-    &:nth-child(n + 4) {
-      display: block;
-    }
-
-    &:not(last-child) {
-      margin-right: 10px;
-    }
+  .reviews__photo:nth-child(n + 4) {
+    display: block;
   }
 }
